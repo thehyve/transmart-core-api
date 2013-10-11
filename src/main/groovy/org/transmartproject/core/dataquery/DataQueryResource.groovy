@@ -3,7 +3,8 @@ package org.transmartproject.core.dataquery
 import org.transmartproject.core.dataquery.acgh.ChromosomalSegment
 import org.transmartproject.core.dataquery.constraints.ACGHRegionQuery
 import org.transmartproject.core.dataquery.acgh.RegionResult
-import org.transmartproject.core.dataquery.acgh.Region
+import org.transmartproject.core.dataquery.constraints.HighDimensionalQuery
+import org.transmartproject.core.dataquery.vcf.VcfValues
 
 /**
  * A resource for querying about clinical and high-dimensional data.
@@ -27,5 +28,9 @@ public interface DataQueryResource {
      * and stop = max(region.stop)
      */
     List<ChromosomalSegment> getChromosomalSegments(ACGHRegionQuery spec)
+
+    List<VcfValues> getCohortMaf(HighDimensionalQuery spec)
+
+    List<VcfValues> getSummaryMaf(HighDimensionalQuery spec)
 
 }

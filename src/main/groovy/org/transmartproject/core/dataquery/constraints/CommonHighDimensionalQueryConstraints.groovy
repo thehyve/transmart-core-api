@@ -2,6 +2,7 @@ package org.transmartproject.core.dataquery.constraints
 
 import groovy.transform.Canonical
 import org.transmartproject.core.dataquery.Platform
+import org.transmartproject.core.ontology.OntologyTerm
 import org.transmartproject.core.querytool.QueryResult
 
 /**
