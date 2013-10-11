@@ -27,7 +27,7 @@ public interface DataQueryResource {
      * @return Segment for each chromosome where start = min(region.start)
      * and stop = max(region.stop)
      */
-    List<ChromosomalSegment> getChromosomalSegments(ACGHRegionQuery spec)
+    List<ChromosomalSegment> getChromosomalSegments(HighDimensionalQuery spec)
 
     List<VcfValues> getCohortMaf(HighDimensionalQuery spec)
 
