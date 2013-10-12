@@ -10,4 +10,5 @@ interface VcfValues {
     String getRef()
     String getAlt()
     Map<String, String> getAdditionalInfo()
+    GenomicVariantType getGenomicVariantType()
 }

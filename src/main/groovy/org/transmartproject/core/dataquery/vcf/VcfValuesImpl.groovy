@@ -10,4 +10,5 @@ class VcfValuesImpl implements VcfValues {
     String ref
     String alt
     Map<String, String> additionalInfo
+    GenomicVariantType genomicVariantType
 }
