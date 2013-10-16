@@ -7,8 +7,8 @@ interface VcfValues {
     String getMafAllele()
     Double getMaf()
     Double getQualityOfDepth()
-    String getRef()
-    String getAlt()
+    String getReferenceAllele()
+    List<String> getAlternativeAlleles()
     Map<String, String> getAdditionalInfo()
-    GenomicVariantType getGenomicVariantType()
+    List<GenomicVariantType> getGenomicVariantTypes()
 }
