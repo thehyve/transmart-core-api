@@ -25,4 +25,10 @@ public interface ClinicalDataResource {
     ClinicalVariable createClinicalVariable(Map<String, Object> parameters,
                                             String type) throws InvalidArgumentsException
 
+    /**
+     * Returns the number of patients from the patient set for which the system has clinical data.
+     * @param patientSet    The patientset to query.
+     * @return The number of patients from the patient set for which the system has clinical data. 
+     */
+    int getPatientCountWithClinicalData(QueryResult patientSet)
 }
