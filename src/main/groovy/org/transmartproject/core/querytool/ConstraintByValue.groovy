@@ -3,7 +3,7 @@ package org.transmartproject.core.querytool
 import groovy.transform.Immutable
 
 @Immutable
-class ConstraintByValue {
+class ConstraintByValue implements Constraint {
 
     /**
      * The operator that will be used to compare the value with the constraint.

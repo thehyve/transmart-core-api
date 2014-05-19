@@ -11,7 +11,12 @@ class Item {
     String conceptKey
 
     /**
+     * Type of item
+     */
+    String type
+
+    /**
      * The constraint, or null.
      */
-    ConstraintByValue constraint
+    Constraint constraint
 }
