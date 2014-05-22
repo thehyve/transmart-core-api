@@ -8,7 +8,7 @@ class ConstraintByVcf implements Constraint {
     /**
      * The position to put a condition on
      */
-    String position
+    String location
 
     /**
      * The type of comparison
@@ -21,8 +21,13 @@ class ConstraintByVcf implements Constraint {
     Value value
 
     enum Value {
-        WILDCARD,
-        MUTATED
+        WILDTYPE,
+        HETEROZYGOUS,
+        HOMOZYGOUS,
+        A,
+        G,
+        C,
+        T
     }
 
     enum Type {
