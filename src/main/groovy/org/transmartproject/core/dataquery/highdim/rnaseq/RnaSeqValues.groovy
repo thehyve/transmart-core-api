@@ -9,16 +9,23 @@ public interface RnaSeqValues {
     Integer getReadCount()
 
     /**
-     * The 'reads per kilo base per million' value
+     * The normalized read count value
+     * Could e.g. be RPKM: 'reads per kilo base per million'
+     *            or FPKM: 'fragments per kilo base per million'
      *
-     * @return the RPKM value
+     * @return the normalized read count value
      */
-     //Double getRpkmValue()
+     Double getNormalizedReadCount()
 
     /**
-     * The 'fragments per kilo base per million' value
-     *
-     * @return the FPKM value
+     * The 2 log of the normalized read count value
+     * @return the 2 log of normalized read count value
      */
-    //Double getFpkmValue()
+     Double getLogNormalizedReadCount()
+
+    /**
+     * The zscore based on the 2 log of the normalized read count values (for a specific gene or region) of all samples/assays in the data set
+     * @return the zscore
+     */
+     Double getZscore()
 }
