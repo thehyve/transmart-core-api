@@ -70,4 +70,17 @@ public interface Region {
      */
     Integer getNumberOfProbes()
 
+    /**
+     * The Gene Symbol of the gene associated with this region
+     *
+     * @return Gene Symbol of gene associated with this region or null if inapplicable
+     */
+    String getGeneSymbol()
+
+    /**
+     * The Gene Id of the gene associated with this region
+     *
+     * @return Gene Id of gene associated with this region or null if inapplicable
+     */
+    Long getGeneId()
 }
