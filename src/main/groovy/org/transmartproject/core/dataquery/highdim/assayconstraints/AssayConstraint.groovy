@@ -43,6 +43,8 @@ public interface AssayConstraint {
      */
     public final static String ASSAY_ID_LIST_CONSTRAINT = 'assay_id_list'
 
+    public final static String PATIENT_ID_LIST_CONSTRAINT = 'patient_id_list'
+
     /**
      * A well-known constraint for building a disjunction of several
      * sub-constraints.
