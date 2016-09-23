@@ -9,6 +9,11 @@ import org.transmartproject.core.users.ProtectedResource
 public interface Study extends ProtectedResource {
 
     /**
+     * Variable for the REST-api to let you know if you have access or not.
+     */
+    boolean getAccess()
+
+    /**
      * The (hopefully unique) name of the study.
      *
      * @return the id of the study (it also appears as trial in the system)
@@ -26,4 +31,5 @@ public interface Study extends ProtectedResource {
      * @return the patients for this study
      */
     Set<Patient> getPatients()
+
 }
